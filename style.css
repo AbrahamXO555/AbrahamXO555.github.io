@@ -33,6 +33,30 @@ header p {
 }
 
 
+/* NAVIGATION BUTTONS */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #00ff66;
+    text-decoration: none;
+    border: 1px solid #00ff66;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: #00ff66;
+    color: black;
+}
+
+
 /* SECTIONS */
 
 section {
@@ -47,7 +71,7 @@ section h2 {
 }
 
 
-/* SIDE BY SIDE PROFILES */
+/* PROFILE LAYOUT */
 
 .cards {
     display: flex;
@@ -98,6 +122,20 @@ section h2 {
 }
 
 
+/* SOCIAL LINKS */
+
+.socials {
+    margin-top: 15px;
+}
+
+
+.socials a {
+    color: #00ff66;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -114,24 +152,9 @@ footer h3 {
 }
 
 
-footer p {
-    margin: 10px 0;
-}
-
-
 footer a {
     color: #00ff66;
     text-decoration: none;
-}
-
-
-.socials {
-    margin: 20px 0;
-}
-
-
-.socials a {
-    margin: 0 10px;
 }
 
 
@@ -147,7 +170,6 @@ footer a {
     .card {
         flex-direction: column;
         text-align: center;
-        padding: 20px;
     }
 
 
@@ -161,6 +183,12 @@ footer a {
     .card h4,
     .card p {
         text-align: center;
+    }
+
+
+    .socials a {
+        display: inline-block;
+        margin: 5px;
     }
 
 }
